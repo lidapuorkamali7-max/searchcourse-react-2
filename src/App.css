@@ -1,0 +1,202 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(34, 34, 34);
+}
+#root{
+  width: 80%;
+  border: none;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke ;
+  transition: all .3s;
+
+}
+h1{
+   color: whitesmoke ;
+}
+img{
+  border-radius: 5px;
+}
+a:hover{
+  color: blue;
+}
+.deletebtn{
+  height: 30px;
+  background-color:rgb(248, 248, 140);
+  border: none;
+  border-radius: 5px;
+}
+.backhomebtn{
+  padding: 10px;
+  background-color: rgb(84, 84, 161);
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.backhomebtn:hover{
+  color: black;
+  background-color: rgb(52, 52, 118) ;
+}
+.mylearning-title{
+  font-size: 30px;
+ 
+}
+
+.courseitem{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+}
+.courses-title{
+  color: whitesmoke;
+}
+.courseimg{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 20px rgb(97, 97, 97);
+  border-radius: 5px;
+
+}
+.courseslist{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.enrollist{
+  display: flex;
+  flex-direction: column;
+
+}
+.enrolitem{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(102, 102, 102);
+  padding-bottom: 10px;
+}
+.enrolimg{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.enrollbtn{
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color:rgb(248, 248, 140);
+  border: none;
+  margin-top: 20px;
+}
+.coursedetail{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 20px;
+}
+.markbtn{
+  height: 30px;
+  width: 170px;
+  background-color:rgb(248, 248, 140) ;
+  border: none;
+  border-radius: 5px;
+}
+.detailimg{
+  max-width: 300px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+.coursedetail ol {
+    padding-left: 40px;
+    list-style-position: inside;
+}
+.coursedetail li {
+    text-align: left;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+.lessonitem{
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+}
+.lessonitem i{
+  padding: 20px 25px;
+  border: 1px solid rgb(102, 100, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lessonvideo{
+  width: 70%;
+  height: 70vh;
+}
+.progresscontainer {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.progressbar {
+    width: 100%;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progressfill {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 10px;
+}
+@media (max-width: 816px){
+  .enrollist{flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  }
+  .enrolitem{
+    display: flex;
+    flex-direction: column;
+  }
+  .deletebtn{
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .enrolimg{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:642px){
+  .coursedetail{
+    display: flex;
+    flex-direction: column;
+  }
+  .detailimg{
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+@media (max-width:366px){
+  .courseimg{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
